@@ -100,7 +100,7 @@ const Slide = () => {
           return (
             <div
               key={item.id}
-              className='cursor-pointer bg-white shadow-md my-2'
+              className='cursor-pointer bg-white shadow-md mx-2'
             >
               <div className='relative'>
                 <div>
