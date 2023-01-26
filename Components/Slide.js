@@ -93,14 +93,15 @@ const Slide = () => {
     ],
   };
 
-  console.log(currentSlide);
-
   return (
     <div className='w-full'>
       <Slider ref={sliderRef} {...settings}>
         {data.map((item) => {
           return (
-            <div key={item.id} className='cursor-pointer bg-white shadow-md'>
+            <div
+              key={item.id}
+              className='cursor-pointer bg-white shadow-md my-2'
+            >
               <div className='relative'>
                 <div>
                   <img
@@ -141,7 +142,7 @@ const Slide = () => {
           onClick={() => {
             sliderRef.current != undefined && sliderRef.current.slickPrev();
           }}
-          className='relative cursor-pointer py-2 px-4 border border-orange rounded-full w-[50px] h-[50px] flex justify-center items-center z-10 md:right-2'
+          className='mr-2 relative cursor-pointer py-2 px-4 border border-orange rounded-full w-[50px] h-[50px] flex justify-center items-center z-10 md:right-2'
         >
           <img src={prevArrow.src} className='sm:w-1/2' />
         </div>
